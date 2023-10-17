@@ -12,17 +12,16 @@ const Home = () => {
   }
 
   return (
-    <main className={styles.main} style={{backgroundColor: 'white'}}>
-      <div className={styles.center} style={{marginTop: '300px'}}>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button type='submit'>Login</button>
-          <br />
-          <Turnstile siteKey='0x4AAAAAAALvq89KRwrAjqSU' />
-        </form>
-      </div>
-    </main>
+    <div className={styles.pageCenter}>
+      <form onSubmit={handleSubmit}>
+        <div><input type="text" placeholder="username" /></div>
+        <div><input type="password" placeholder="password" /></div>
+        <div><button type='submit'>Login</button></div>
+        <br />
+        <Turnstile siteKey='0x4AAAAAAALvq89KRwrAjqSU' />
+      </form>
+    </div>
   )
 }
+
 export default Home;
