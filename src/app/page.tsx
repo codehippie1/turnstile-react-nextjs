@@ -26,6 +26,14 @@ const Home = () => {
           siteKey='0x4AAAAAAALvq89KRwrAjqSU'
           onSuccess={() => setCanSubmit(true)}
         />
+        {/* <Turnstile siteKey='1x00000000000000000000AA'
+          id='turnstile-2'
+          options={{
+            theme: 'dark',
+            size: 'compact',
+            language: 'fr',
+          }}
+        /> */}
       </form>
     </div>
   )
